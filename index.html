@@ -1,27 +1,599 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shreyas GS | Data Science & AI Portfolio</title>
-    <meta name="description" content="Portfolio of Shreyas GS, a Data Science & AI Specialist with expertise in Machine Learning, Deep Learning, and Generative AI." />
-    <meta name="author" content="Shreyas GS" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyas GS | Data Science & AI Portfolio</title>
+  <meta name="description" content="Portfolio of Shreyas GS, a Data Science & AI Specialist with expertise in Machine Learning, Deep Learning, and Generative AI." />
+  <meta name="author" content="Shreyas GS" />
 
-    <meta property="og:title" content="Shreyas GS | Data Science & AI Portfolio" />
-    <meta property="og:description" content="Portfolio of Shreyas GS, a Data Science & AI Specialist with expertise in Machine Learning, Deep Learning, and Generative AI." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <meta property="og:title" content="Shreyas GS | Data Science & AI Portfolio" />
+  <meta property="og:description" content="Portfolio of Shreyas GS, a Data Science & AI Specialist with expertise in Machine Learning, Deep Learning, and Generative AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@lovable_dev" />
+  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+  
+  <!-- Feather Icons (similar to Lucide) -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">Shreyas GS</div>
+          
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+          
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="menuToggle">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </header>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span>Hi, I'm</span> 
+            <span class="text-accent">Shreyas GS</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Data Science & AI Specialist with expertise in Machine Learning, Deep Learning, and Generative AI
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="mailto:shreyasgs1999@gmail.com" class="btn btn-primary">Get in Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/shreyas-gs/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+            <a href="tel:+917019031718" class="social-link">+91 7019031718</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator">
+        <a href="#about" class="scroll-link">
+          <span>Scroll Down</span>
+          <i data-feather="arrow-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-white">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="icon-circle">
+              <i data-feather="database"></i>
+            </div>
+            <h3>Data Analytics</h3>
+            <p>
+              Skilled in data wrangling, transformation, and critical analysis. Proficient in SQL, Snowflake, 
+              and data modeling to extract meaningful insights from complex datasets.
+            </p>
+          </div>
+          
+          <div class="about-card">
+            <div class="icon-circle">
+              <i data-feather="share-2"></i>
+            </div>
+            <h3>Networking</h3>
+            <p>
+              Cisco certified with expertise in network fundamentals, security, automation, and troubleshooting. 
+              Experienced in implementing monitoring solutions and resolving connectivity issues.
+            </p>
+          </div>
+          
+          <div class="about-card">
+            <div class="icon-circle">
+              <i data-feather="cpu"></i>
+            </div>
+            <h3>Generative AI & LLMs</h3>
+            <p>
+              Passionate about large language models and generative AI applications. Experienced in building 
+              chatbots, recommendation systems, and AI-driven workflows with cutting-edge technologies.
+            </p>
+          </div>
+        </div>
+        
+        <div class="about-text">
+          <p>
+            A highly motivated data science professional with expertise in Machine Learning, Deep Learning,
+            and Generative AI. Skilled in Python, TensorFlow, and PyTorch, with hands-on experience in
+            developing predictive models, intelligent systems, and AI-driven solutions. Adept at extracting
+            meaningful insights from data, identifying patterns, and building innovative chatbot
+            applications. Passionate about leveraging AI to solve complex problems and drive data-driven
+            decision-making.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-feather="database"></i>
+              <h3>Database Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Snowflake</span>
+              <span class="skill-tag">Data Modeling</span>
+              <span class="skill-tag">ETL/ELT Processes</span>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-feather="layers"></i>
+              <h3>Data Science</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Generative AI</span>
+              <span class="skill-tag">Tensorflow</span>
+              <span class="skill-tag">Keras</span>
+              <span class="skill-tag">Dash by Plotly</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Seaborn</span>
+              <span class="skill-tag">Opencv</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Numpy</span>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-feather="cpu"></i>
+              <h3>Algorithms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Clustering</span>
+              <span class="skill-tag">Recommendation Systems</span>
+              <span class="skill-tag">Artificial Neural Networks</span>
+              <span class="skill-tag">Convolutional Neural Networks</span>
+              <span class="skill-tag">Recurrent Neural Networks</span>
+              <span class="skill-tag">Transfer Learning</span>
+              <span class="skill-tag">Transformers</span>
+              <span class="skill-tag">Knowledge Graph</span>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-feather="code"></i>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">MCP server</span>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-feather="server"></i>
+              <h3>Software Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Nginx</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Ansible</span>
+              <span class="skill-tag">Wireshark</span>
+              <span class="skill-tag">Packet Tracer</span>
+              <span class="skill-tag">ITIL processes</span>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-feather="bar-chart-2"></i>
+              <h3>Data Analysis</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Wrangling</span>
+              <span class="skill-tag">Data Transformation</span>
+              <span class="skill-tag">Critical Analysis</span>
+              <span class="skill-tag">Tableau</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-white">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="experience-timeline">
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <div class="timeline-date">
+                <i data-feather="calendar"></i>
+                <span>08/2021 – 08/2022</span>
+                <span class="dot">•</span>
+                <span>Bengaluru, India</span>
+              </div>
+              <div class="timeline-position">
+                <h3>Systems Engineer</h3>
+                <span>-</span>
+                <span class="company">Tata Consultancy Services</span>
+              </div>
+            </div>
+            
+            <ul class="timeline-details">
+              <li>
+                Designed and optimized SQL queries to reduce response time by 20%
+                and enhance system performance, leveraging Python for query
+                automation and performance analysis.
+              </li>
+              <li>
+                Developed and executed automated scripts using Python and SQL for
+                data extraction, transformation, and loading (ETL), improving accuracy
+                by 10%.
+              </li>
+              <li>
+                Implemented network monitoring solutions by configuring alerts for
+                database systems and developing Python-based scripts to proactively
+                detect and resolve connectivity issues.
+              </li>
+              <li>
+                Engineered robust database solutions and integrated APIs using
+                Python and SQL to streamline data flow between healthcare systems,
+                ensuring seamless interoperability.
+              </li>
+              <li>
+                Worked for a client, DAVITA Groups, in the kidney healthcare sector,
+                managing patient records, optimizing data pipelines, and handling high
+                volumes of sensitive data with utmost precision.
+              </li>
+              <li>
+                Developed automation scripts using Python to enhance database
+                management, streamline web development tasks, and improve overall
+                system efficiency.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="JupyterMCP Project">
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="github"></i>
+                </a>
+                <a href="https://demo.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>JupyterMCP – Jupyter & Claude AI Integration</h3>
+              <p>Built a Model Context Protocol (MCP) server enabling Claude AI to interact with Jupyter Notebooks. Implemented WebSocket-based two-way communication for cell execution, editing, and notebook control.</p>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AI-Powered Bank Customer Complaint Classifier">
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>AI-Powered Bank Customer Complaint Classifier</h3>
+              <p>Designed and implemented an AI-driven system utilizing DistilBERT to categorize and prioritize bank customer complaints, improving efficiency and enhancing overall customer experience.</p>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Personalized Pub Med Chatbot">
+              <div class="project-links">
+                <a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Personalized Pub Med Chatbot</h3>
+              <p>An AI-powered tool that enables users to search and retrieve relevant medical literature from PubMed efficiently. Built using Streamlit and deployed in Hugging Face Spaces.</p>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Python Lab Assistant">
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Python Lab Assistant</h3>
+              <p>Developed a project that analyzes Python code to identify issues, ensuring users understand errors and their causes. The project also assists in debugging and provides clear explanations.</p>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Activity Detection using Wi-Fi Access Point">
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="github"></i>
+                </a>
+                <a href="https://demo.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Activity Detection using Wi-Fi Access Point</h3>
+              <p>Spearheaded research on Wi-Fi CSI for passive human behavior recognition using dynamic CSI fluctuations. Developed a machine learning pipeline for activity detection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-white">
+      <div class="container">
+        <div class="education-grid">
+          <div class="education-column">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-items">
+              <div class="education-item">
+                <div class="education-icon">
+                  <i data-feather="book-open"></i>
+                </div>
+                <div class="education-details">
+                  <h3>Master of Science (MSc)</h3>
+                  <p class="institution">University of Birmingham</p>
+                  <p class="degree-meta">Electronic and Computer Engineering - 4.25/5</p>
+                  <p class="degree-meta">09/2022 – 09/2023 | Birmingham, United Kingdom</p>
+                </div>
+              </div>
+              
+              <div class="education-item">
+                <div class="education-icon">
+                  <i data-feather="book-open"></i>
+                </div>
+                <div class="education-details">
+                  <h3>Bachelor of Engineering (B.E.)</h3>
+                  <p class="institution">BMS College of Engineering</p>
+                  <p class="degree-meta">Electronics and Communication Engineering - 9/10</p>
+                  <p class="degree-meta">08/2017 – 08/2021 | Bengaluru, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="certification-column">
+            <h2 class="section-title">Certifications</h2>
+            
+            <div class="certification-grid">
+              <div class="certification-item">
+                <div class="certification-header">
+                  <i data-feather="award"></i>
+                  <h3>Cisco Certified Network Associate (CCNA)</h3>
+                </div>
+                <p>Validates expertise in networking fundamentals, security, automation, and troubleshooting, essential for configuring and managing network infrastructure.</p>
+              </div>
+              
+              <div class="certification-item">
+                <div class="certification-header">
+                  <i data-feather="award"></i>
+                  <h3>Microsoft Certified: Azure Network Engineer Associate</h3>
+                </div>
+                <p>Demonstrates expertise in designing, implementing, and managing Azure networking solutions, including security, connectivity, and hybrid environments.</p>
+              </div>
+              
+              <div class="certification-item">
+                <div class="certification-header">
+                  <i data-feather="award"></i>
+                  <h3>LangChain for LLM Application Development!</h3>
+                </div>
+                <p>Expertise in using LangChain to build and optimize applications powered by large language models (LLMs), enabling seamless integration, automation, and enhanced AI-driven workflows.</p>
+              </div>
+              
+              <div class="certification-item">
+                <div class="certification-header">
+                  <i data-feather="award"></i>
+                  <h3>LangChain Chat with Your Data</h3>
+                </div>
+                <p>Skilled in leveraging LangChain to build AI-powered chat applications that interact with and analyze custom data sources for intelligent insights and automation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-container">
+          <div class="contact-cards">
+            <a href="mailto:shreyasgs1999@gmail.com" class="contact-card">
+              <div class="contact-icon">
+                <i data-feather="mail"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Email</h3>
+                <p>shreyasgs1999@gmail.com</p>
+              </div>
+            </a>
+            
+            <a href="tel:+917019031718" class="contact-card">
+              <div class="contact-icon">
+                <i data-feather="phone"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Phone</h3>
+                <p>+91 7019031718</p>
+              </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/shreyas-gs/" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon">
+                <i data-feather="linkedin"></i>
+              </div>
+              <div class="contact-info">
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/shreyas-gs</p>
+              </div>
+            </a>
+            
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon">
+                <i data-feather="github"></i>
+              </div>
+              <div class="contact-info">
+                <h3>GitHub</h3>
+                <p>github.com/shreyasgs</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="contact-cta">
+            <p>Interested in working together? Feel free to reach out for collaborations or just a friendly chat.</p>
+            <a href="mailto:shreyasgs1999@gmail.com" class="btn btn-primary">Send a Message</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-branding">
+            <div class="footer-logo">Shreyas GS</div>
+            <p>Data Science & AI Specialist</p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> Shreyas GS. All rights reserved.</p>
+          <p class="footer-love">Built with <i data-feather="heart" class="heart-icon"></i> and HTML/CSS</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Initialize Feather icons
+    document.addEventListener('DOMContentLoaded', function() {
+      feather.replace();
+      
+      // Set current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      
+      // Mobile menu toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      
+      menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+        
+        // Toggle between menu and x icon
+        const icon = menuToggle.querySelector('svg');
+        if (mobileMenu.classList.contains('active')) {
+          feather.replace(icon, { type: 'x' });
+        } else {
+          feather.replace(icon, { type: 'menu' });
+        }
+      });
+      
+      // Close mobile menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.remove('active');
+          feather.replace(menuToggle.querySelector('svg'), { type: 'menu' });
+        });
+      });
+      
+      // Header scroll effect
+      const header = document.querySelector('.header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 10) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+</body>
 </html>

@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
 
-## Project info
+# Shreyas GS Portfolio
 
-**URL**: https://lovable.dev/projects/39eed5a8-d4f0-4fd1-8d5f-f5f11dc93d8a
+A static HTML/CSS portfolio website showcasing skills, projects, experience, and education in Data Science and AI.
 
-## How can I edit this code?
+## Hosting on GitHub Pages
 
-There are several ways of editing your application.
+### Step 1: Create a GitHub Repository
 
-**Use Lovable**
+1. Go to [GitHub](https://github.com) and log in to your account
+2. Click on "New" to create a new repository
+3. Name your repository (e.g., `portfolio` or `your-username.github.io`)
+4. Make it public
+5. Click "Create repository"
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/39eed5a8-d4f0-4fd1-8d5f-f5f11dc93d8a) and start prompting.
+### Step 2: Upload Files
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository to your local machine:
+   ```
+   git clone https://github.com/yourusername/your-repo-name.git
+   ```
 
-**Use your preferred IDE**
+2. Place all the files from this project into your local repository folder
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Add, commit, and push the files:
+   ```
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Step 3: Enable GitHub Pages
 
-Follow these steps:
+1. Go to your repository on GitHub
+2. Click on "Settings"
+3. Scroll down to the "GitHub Pages" section
+4. Under "Source", select "main" branch
+5. Click "Save"
+6. Wait a few minutes for your site to be published
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Your site will be available at `https://yourusername.github.io/your-repo-name/`.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+If you used the special repository name `yourusername.github.io`, your site will be available at `https://yourusername.github.io/`.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Customization
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Content**: Edit the HTML files to update your personal information, projects, skills, etc.
+- **Styling**: Modify the CSS in `styles.css` to change colors, fonts, layouts, etc.
+- **Images**: Replace the image URLs with your own project images or photos
 
-**Edit a file directly in GitHub**
+## Technologies Used
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- HTML5
+- CSS3
+- JavaScript
+- Feather Icons
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/39eed5a8-d4f0-4fd1-8d5f-f5f11dc93d8a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is available for personal use.
