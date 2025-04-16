@@ -59,33 +59,34 @@ const ProjectsSection = () => {
       title: "JupyterMCP – Jupyter & Claude AI Integration",
       description: "Built a Model Context Protocol (MCP) server enabling Claude AI to interact with Jupyter Notebooks. Implemented WebSocket-based two-way communication for cell execution, editing, and notebook control.",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      githubLink: "https://github.com",
-      demoLink: "https://demo.example.com"
+      githubLink: "https://github.com/shreyu258/Jupyter_MCP_Server",
+      demoLink: null
     },
     {
       title: "AI-Powered Bank Customer Complaint Classifier",
       description: "Designed and implemented an AI-driven system utilizing DistilBERT to categorize and prioritize bank customer complaints, improving efficiency and enhancing overall customer experience.",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      githubLink: "https://github.com"
+      demoLink: "https://huggingface.co/spaces/shreyas258/bank_ticket_classifer_demo"
     },
     {
       title: "Personalized Pub Med Chatbot",
       description: "An AI-powered tool that enables users to search and retrieve relevant medical literature from PubMed efficiently. Built using Streamlit and deployed in Hugging Face Spaces.",
       image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      demoLink: "https://huggingface.co/spaces"
+      demoLink: "https://huggingface.co/spaces/shreyas258/pub_med_search"
     },
     {
       title: "Python Lab Assistant",
       description: "Developed a project that analyzes Python code to identify issues, ensuring users understand errors and their causes. The project also assists in debugging and provides clear explanations.",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80",
-      githubLink: "https://github.com"
+      githubLink: "https://github.com/shreyu258/pyhton_lab_assistant",
+      demoLink: null
     },
     {
       title: "Activity Detection using Wi-Fi Access Point",
       description: "Spearheaded research on Wi-Fi CSI for passive human behavior recognition using dynamic CSI fluctuations. Developed a machine learning pipeline for activity detection.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
-      githubLink: "https://github.com",
-      demoLink: "https://demo.example.com"
+      githubLink: null,
+      demoLink: null
     }
   ];
 
